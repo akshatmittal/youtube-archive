@@ -25,6 +25,8 @@ YT.live = {
         let date = new Date(gsnip.publishedAt);
 
         let cont = document.createElement("div");
+        cont.setAttribute("data-video", k.id.videoId);
+        cont.onclick = YT.live.launchVideo;
         cont.classList.add("col-day-el");
 
         let image = document.createElement("img");
@@ -61,6 +63,9 @@ YT.live = {
                 });
             });
         }
+    },
+    launchVideo: function () {
+        window.open("https://www.youtube.com/watch?v=" + this.getAttribute("data-video"));
     },
     generateMonth: function (yr, mo, ready) {
         let firstDay = (new Date(yr, mo)).getDay();
