@@ -1,0 +1,17 @@
+{
+  "name": "youtube-archive",
+  "version": "1.0.0",
+  "description": "Chronological YouTube Video Calander — YouTube Archive",
+  "scripts": {
+    "start": "http-server --ssl --cert _internal\\ssl.cert --key _internal\\ssl.key -a local.akshatmittal.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akshatmittal/youtube-archive.git"
+  },
+  "author": "Akshat Mittal",
+  "bugs": {
+    "url": "https://github.com/akshatmittal/youtube-archive/issues"
+  },
+  "homepage": "https://akshatmittal.com/youtube-archive/"
+}
