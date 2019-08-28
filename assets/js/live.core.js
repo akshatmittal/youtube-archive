@@ -54,7 +54,6 @@ YT.live = {
                     }
                     e.items.forEach(YT.live.parseItems);
                     if (e.nextPageToken) {
-                        console.error("next page!");
                         $.getJSON("https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=" + YT.live.channelID + "&publishedAfter=" + fromDate.toISOString() + "&publishedBefore=" + toDate.toISOString() + "&maxResults=50&type=video&key=" + YT.keyManager.getKey() + "&pageToken=" + e.nextPageToken, function (q) {
                             q.items.forEach(YT.live.parseItems);
                         });

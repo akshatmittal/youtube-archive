@@ -382,7 +382,7 @@ textarea {
 
 .topbar .top-navbar {
     min-height: 70px;
-    padding: 0px 15px 0 0;
+    padding: 0;
 }
 
 .topbar .top-navbar .navbar-header {
@@ -395,6 +395,7 @@ textarea {
     margin-right: 0px;
     padding-bottom: 0px;
     padding-top: 0px;
+    font-size: 1.5em;
 }
 
 .topbar .top-navbar .navbar-header .navbar-brand b {
@@ -853,7 +854,7 @@ sidebar navigation
 
 .super-search {
     z-index: 9999;
-    top: 10vh;
+    top: 2em;
     display: none;
 }
 
@@ -1002,7 +1003,7 @@ sidebar navigation
     }
 
     #sharer .card-block {
-        padding: 1.25rem 0;
+        padding: 1rem 0;
     }
 
     #sharer .col-3 {
@@ -1015,5 +1016,13 @@ sidebar navigation
 
     .vs-leader {
         position: relative;
+    }
+
+    #calendar-container tr .col-week {
+        font-size: 0.75rem;
+    }
+
+    .col-title {
+        font-size: 18px;
     }
 }

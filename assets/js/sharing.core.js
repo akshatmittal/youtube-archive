@@ -10,7 +10,7 @@ YT.sharing = {
         $("#yt_searchvalue_m").focus();
     },
     getText: function () {
-        return encodeURIComponent("Check out " + $("#yt_name").text() + "'s YouTube Calendar on @YouTube!");
+        return encodeURIComponent("Check out " + $("#yt_name").text() + "'s YouTube Calendar on @YouTube! #YouTubeArchive");
     },
     getEncodedURL: function () {
         return encodeURIComponent(YT.urls.getCurrent());

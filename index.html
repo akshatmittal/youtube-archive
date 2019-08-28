@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="fragment" content="!" />
     <meta name="viewport" content="width=device-width, initial-scale=0.9, user-scalable=no">
-    <link rel="icon" type="image/png" href="assets/images/icon.png">
+    <link rel="icon" type="image/png" href="assets/images/icon.png?v=1">
     <title>Chronological YouTube Video Calendar — YouTube Archive</title>
 
     <link rel="canonical" href="https://akshatmittal.com/youtube-archive/" />
@@ -16,11 +16,11 @@
     <meta name="twitter:description"
         content="YouTube Archive is the easiest way to view the Chronological YouTube Video Calendar for any YouTuber on the planet! Simply enter the channel name, or ID and you are good to go!" />
     <meta name="twitter:creator" content="@iakshatmittal" />
-    <meta name="twitter:image" content="https://akshatmittal.com/youtube-archive/assets/images/sharing.jpg?v=1" />
+    <meta name="twitter:image" content="https://akshatmittal.com/youtube-archive/assets/images/sharing.png?v=1" />
     <meta property="og:title" content="Chronological YouTube Video Calendar — YouTube Archive" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://akshatmittal.com/youtube-archive/" />
-    <meta property="og:image" content="https://akshatmittal.com/youtube-archive/assets/images/sharing.jpg?v=1" />
+    <meta property="og:image" content="https://akshatmittal.com/youtube-archive/assets/images/sharing.png?v=1" />
     <meta property="og:description"
         content="YouTube Archive is the easiest way to view the Chronological YouTube Video Calendar for any YouTuber on the planet! Simply enter the channel name, or ID and you are good to go!" />
     <meta property="og:site_name" content="Akshat Mittal" />
@@ -68,7 +68,7 @@
         <div class="page-wrapper">
             <div class="container super-search nosel">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 col-md-10 m-auto">
                         <div class="card">
                             <div class="card-block">
                                 <div>
@@ -85,9 +85,7 @@
                                         </span>
                                     </div>
                                 </form>
-                                <div class="results" id="results">
-
-                                </div>
+                                <div class="results" id="results"></div>
                                 <div>
                                     <button class="btn btn-danger w-100" id="yt_comrest">
                                         <i class="fa fa-times"></i> Close
@@ -114,20 +112,20 @@
                             <div class="card-block text-center p-t-0">
                                 <div class="card-body">
                                     <div class="position-relative">
-                                        <div class="row text-center m-t-20" id="openRealtime">
-                                            <div class="col-sm-3 col-6">
+                                        <div class="row text-center" id="openRealtime">
+                                            <div class="col-sm-3 col-6 m-t-20">
                                                 <h4 class="" id="yt_date">-</h4>
                                                 <small>Joined YouTube</small>
                                             </div>
-                                            <div class="col-sm-3 col-6">
+                                            <div class="col-sm-3 col-6 m-t-20">
                                                 <h4 class="" id="yt_videos">-</h4>
                                                 <small>Videos</small>
                                             </div>
-                                            <div class="col-sm-3 col-6">
+                                            <div class="col-sm-3 col-6 m-t-20">
                                                 <h4 class="" id="yt_subs">-</h4>
                                                 <small>Subscribers</small>
                                             </div>
-                                            <div class="col-sm-3 col-6">
+                                            <div class="col-sm-3 col-6 m-t-20">
                                                 <h4 class="" id="yt_views">-</h4>
                                                 <small>Views</small>
                                             </div>
@@ -219,6 +217,31 @@
                         </div>
                     </div>
                 </div> -->
+                <div class="row" id="embeds">
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-block">
+                                <div>
+                                    <div>
+                                        <h3 class="card-title">Sharing</h3>
+                                    </div>
+                                </div>
+                                <div class="form-horizontal form-material">
+                                    <p>You can share the YouTube Calendar for any channel on YouTube by sharing
+                                        the following URL. You can also bookmark (Ctrl/Cmd + D) the current URL to
+                                        come back anytime!</p>
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <input type="text" name="url" value="..wait.." id="yt_shareurl"
+                                                onclick="this.select()" readonly=""
+                                                class="form-control form-control-line text-center"></input>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="row" id="about">
                     <div class="col-sm-12">
                         <div class="card">
@@ -262,31 +285,6 @@
                                             rel="noopener">PayPal</a> or <a href="https://imjo.in/26KdPa"
                                             target="_blank" rel="noopener">Instamojo (India)</a>.
                                     </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row" id="embeds">
-                    <div class="col-sm-12">
-                        <div class="card">
-                            <div class="card-block">
-                                <div>
-                                    <div>
-                                        <h3 class="card-title">Sharing</h3>
-                                    </div>
-                                </div>
-                                <div class="form-horizontal form-material">
-                                    <p>You can share the YouTube Calendar for any channel on YouTube by sharing
-                                        the following URL. You can also bookmark (Ctrl/Cmd + D) the current URL to
-                                        come back anytime!</p>
-                                    <div class="form-group">
-                                        <div class="col-md-12">
-                                            <input type="text" name="url" value="..wait.." id="yt_shareurl"
-                                                onclick="this.select()" readonly=""
-                                                class="form-control form-control-line text-center"></input>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>

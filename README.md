@@ -1,3 +1,5 @@
+<img src="assets/images/icon.png" alt="drawing" width="200px"/>
+
 # YouTube Archive
 
 YouTube Archive displays all the videos from any YouTuber in Calendar format,which can be really useful for people who post videos everyday like vloggers.YouTube Archive loads up to 100 videos each month and displays them.
@@ -31,3 +33,5 @@ This project uses a part of code from WrapPixel.
 # Disclaimer
 
 The project forks and code by default redirects back to this repo. You can view the instructions to modify the code [here](https://github.com/akshatmittal/youtube-realtime/issues/14#issuecomment-247537299).
+
+The code is absolutely terrible, has mixed ES5 and ES6 methods primarily because it was created within a few hours with [YouTube Realtime](https://akshatmittal.com/youtube-realtime/)'s source as base (which is over 3 years old now).
