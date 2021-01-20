@@ -29,7 +29,7 @@ YT.query = {
     },
     getCover: function (e) {
         $.getJSON("https://www.googleapis.com/youtube/v3/channels?part=brandingSettings&id=" + encodeURIComponent(e) + "&key=" + YT.keyManager.getKey(), function (e) {
-            YT.updateManager.updateCover(e.items[0].brandingSettings.image.bannerImageUrl);
+            YT.updateManager.updateCover(e.items[0].brandingSettings.image.bannerExternalUrl);
         });
     },
     search: function (e) {
